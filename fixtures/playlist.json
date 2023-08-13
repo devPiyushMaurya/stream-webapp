@@ -1,0 +1,142 @@
+{
+    "adSchedule": null,
+    "analyticsToken": "lDd_MCg4EeuMunbqcIJccw",
+    "assets": {
+        "banner": null
+    },
+    "content": [
+        {
+            "contentId": "aljbAWDP",
+            "enableText": false,
+            "featured": true,
+            "title": "Featured (for Free version)",
+            "type": "playlist"
+        },
+        {
+            "contentId": "A4tR6lr6",
+            "enableText": true,
+            "featured": false,
+            "title": "Trending",
+            "type": "playlist"
+        },
+        {
+            "contentId": "sR5VypYk",
+            "enableText": true,
+            "featured": false,
+            "title": "All Films",
+            "type": "playlist"
+        },
+        {
+            "contentId": "eP1rCjc2",
+            "enableText": true,
+            "featured": false,
+            "title": "mvandeveen+ott@jwplayer.com",
+            "type": "favorites"
+        },
+        {
+            "contentId": "Ie7F1Rou",
+            "enableText": true,
+            "featured": false,
+            "title": "Continue Watching",
+            "type": "continue_watching"
+        },
+        {
+            "contentId": "WppSIFKF",
+            "enableText": true,
+            "featured": false,
+            "title": "Live Channels",
+            "type": "playlist"
+        },
+        {
+            "contentId": "o45EkQBf",
+            "enableText": true,
+            "featured": false,
+            "title": "All Courses",
+            "type": "playlist"
+        },
+        {
+            "contentId": "A4tR6lr6",
+            "enableText": true,
+            "featured": false,
+            "title": "Trending",
+            "type": "playlist"
+        },
+        {
+            "contentId": "AgDH13Dx",
+            "enableText": false,
+            "featured": false,
+            "title": "VOD",
+            "type": "playlist"
+        },
+        {
+            "contentId": "gC4rQHTF",
+            "enableText": false,
+            "featured": false,
+            "title": "Live",
+            "type": "playlist"
+        },
+        {
+            "contentId": "6zZhFZzi",
+            "enableText": false,
+            "featured": false,
+            "title": "Scheduled",
+            "type": "playlist"
+        }
+    ],
+    "contentProtection": {
+        "accessModel": "free",
+        "drm": {
+            "defaultPolicyId": ""
+        }
+    },
+    "custom": {
+        "enableSharing": "true"
+    },
+    "description": "",
+    "features": {
+        "continueWatchingList": "Ie7F1Rou",
+        "enableCasting": true,
+        "enableSharing": false,
+        "favoritesList": "eP1rCjc2",
+        "recommendationsPlaylist": "fuD6TWcf",
+        "searchPlaylist": "uhGekd9D"
+    },
+    "integrations": {
+        "jwp": {
+            "assetId": null,
+            "clientId": ""
+        }
+    },
+    "menu": [
+        {
+            "contentId": "sR5VypYk",
+            "filterTags": "Comedy,Action",
+            "label": "Movies",
+            "type": "playlist"
+        },
+        {
+            "contentId": "o45EkQBf",
+            "filterTags": "",
+            "label": "Courses",
+            "type": "playlist"
+        },
+        {
+            "contentId": "WppSIFKF",
+            "filterTags": "",
+            "label": "Live",
+            "type": "playlist"
+        }
+    ],
+    "player": "qlRcQV2d",
+    "siteName": "",
+    "styling": {
+        "backgroundColor": null,
+        "dynamicBlur": true,
+        "footerText": null,
+        "headerBackground": null,
+        "highlightColor": null,
+        "posterFading": true,
+        "shelfTitles": true
+    },
+    "version": "2"
+}
