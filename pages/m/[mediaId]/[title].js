@@ -113,7 +113,7 @@ const JWPlayerOtt = ({ mediaData, mediaId }) => {
         //   onReady={initializePlayerSetup}
             aspectRatio="16:9"
         />
-        <h1 className="container my-3 section__title">{mediaData.title}</h1>
+        <h1 className="container py-3 section__title">{mediaData.title}</h1>
     </Layout>
     </>
   )

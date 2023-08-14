@@ -5,15 +5,16 @@ import PlaylistData from '@/fixtures/playlist.json';
 import GalleryView from '@/container/sections/gallery-view';
 import BannerView from '@/container/sections/banner-view';
 import CustomSeo from '@/components/custom-seo/custom-seo';
+import { DEFAULT_META_DESC, DEFAULT_META_IMG, DEFAULT_META_TITLE } from '@/lib/assets';
 
 const HomePage = (props) => {
   const { sectionFetchedData = {} } = props;
   return (
     <>
     <CustomSeo
-      title="Explore the Ultimate World of Entertainment with Our OTT Web App"
-      description="Immerse yourself in a world of limitless entertainment through our cutting-edge OTT web app. Stream movies, TV shows, and more, all in one place. Discover a new era of online entertainment today."
-      ogImage="https://assets.gumlet.io/public/img/image-optimization/v2/responsive.png?w=640&q=75"
+      title={DEFAULT_META_TITLE}
+      description={DEFAULT_META_DESC}
+      ogImage={DEFAULT_META_IMG}
     />
     <Layout>
       {PlaylistData.content.map((section, index) => {

@@ -88,6 +88,10 @@
   right: 0;
 }
 
+.layout__main {
+  min-height: calc(100vh - 56px - 40px);
+}
+
 @media screen and (max-width: 600px){
   .banner__layout {
     aspect-ratio: 16/9;
