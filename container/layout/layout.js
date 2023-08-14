@@ -8,9 +8,9 @@ const Layout = (props) => {
         <header className='layout__header w-100 py-3'>
             <div className='container'>
                 <nav className="menu__nav d-flex">
-                    <Link href="/" className="text-white text-decoration-none">Home</Link>
+                    <Link href="/" className="text-white text-decoration-none font-weight-600">Home</Link>
                     {PlaylistData.menu.map((menuItem) => (
-                        <Link key={menuItem.contentId} href={`/p/${menuItem.contentId}`} className="text-white text-decoration-none">{menuItem.label}</Link>
+                        <Link key={menuItem.contentId} href={`/p/${menuItem.contentId}`} className="text-white text-decoration-none font-weight-600">{menuItem.label}</Link>
                     ))}
                 </nav>
             </div>
