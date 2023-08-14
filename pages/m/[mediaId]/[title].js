@@ -2,6 +2,7 @@ import React from 'react'
 import ReactJWPlayer from 'react-jw-player';
 import { createPlaylistLinkByMediaId } from '@/lib/playlist';
 import Layout from '@/container/layout/layout';
+import CustomSeo from '@/components/custom-seo/custom-seo';
 // import { getWatchHistoryFromLocal, JWPLAYER_SCRIPT, saveHistoryInLocal, VideoProgressMinMax } from '../../../utils/ysOtt';
 const JWPLAYER_SCRIPT = process.env.NEXT_PUBLIC_JW_PLAYER_SCRIPT;
 
@@ -96,6 +97,12 @@ const JWPlayerOtt = ({ mediaData, mediaId }) => {
 //     calculateWatchHistoryProgress();
 //   };
   return (
+    <>
+    <CustomSeo
+      title={mediaData.title}
+      description={mediaData.description}
+      ogImage={mediaData.playlist?.[0]?.image}
+    />
     <Layout>
         <ReactJWPlayer
           playerId={mediaId}
@@ -106,7 +113,9 @@ const JWPlayerOtt = ({ mediaData, mediaId }) => {
         //   onReady={initializePlayerSetup}
             aspectRatio="16:9"
         />
+        <h1 className="container my-3 section__title">{mediaData.title}</h1>
     </Layout>
+    </>
   )
 }
 
