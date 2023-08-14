@@ -16,11 +16,11 @@ const HomePage = (props) => {
       ogImage="https://assets.gumlet.io/public/img/image-optimization/v2/responsive.png?w=640&q=75"
     />
     <Layout>
-      {PlaylistData.content.map((section) => {
+      {PlaylistData.content.map((section, index) => {
         if (section.featured) {
-          return <BannerView key={section.contentId} sectionData={sectionFetchedData[section.contentId]} section={section} />
+          return <BannerView mappingIndex={index} key={section.contentId} sectionData={sectionFetchedData[section.contentId]} section={section} />
         } else {
-          return <GalleryView key={section.contentId} sectionData={sectionFetchedData[section.contentId]} section={section} />
+          return <GalleryView mappingIndex={index} key={section.contentId} sectionData={sectionFetchedData[section.contentId]} section={section} />
         }
         })}
     </Layout>

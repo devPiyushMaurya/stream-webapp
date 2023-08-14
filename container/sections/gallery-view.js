@@ -3,7 +3,7 @@ import MovieCard from '@/components/movie-card/card';
 import Image from 'next/image';
 import { ARROW_ICON } from '@/lib/assets';
 
-const GalleryView = ({ section, sectionData }) => {
+const GalleryView = ({ section, sectionData, mappingIndex }) => {
   const sliderRef = React.useRef(null);
 
   React.useEffect(() => {
@@ -37,8 +37,8 @@ const GalleryView = ({ section, sectionData }) => {
       </h2>}
       <Image onClick={handleScrollLeft} src={ARROW_ICON} unoptimized width={30} height={30} alt="Previous" className="previous__icon center__y__absolute p-1 bg-white rounded-circle" />
       <div ref={sliderRef} className="d-flex w-100 section__gallery scroll__bar__hide gap__flex">
-        {sectionData?.playlist?.map((movie) => (
-          <MovieCard key={movie.mediaid} data={movie} />
+        {sectionData?.playlist?.map((movie, cardIndex) => (
+          <MovieCard mappingIndex={mappingIndex} cardIndex={cardIndex} key={movie.mediaid} data={movie} />
         ))}
       </div>
       <Image onClick={handleScrollRight} src={ARROW_ICON} unoptimized width={30} height={30} alt="Previous" className="next__icon center__y__absolute p-1 bg-white rounded-circle" />

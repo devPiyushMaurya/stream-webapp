@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
-const BannerView = ({ section, sectionData }) => {
+const BannerView = ({ section, sectionData, mappingIndex }) => {
   const sliderRef = React.useRef(null);
   const handleScrollLeft = () => {
     const leftPosition = sliderRef.current.scrollLeft;
@@ -30,10 +30,10 @@ const BannerView = ({ section, sectionData }) => {
         {section.title}
       </h2>}
       <div ref={sliderRef} className="d-flex w-100 section__gallery scroll__bar__hide">
-        {sectionData?.playlist?.map((movie) => (
+        {sectionData?.playlist?.map((movie, bannerIndex) => (
           <div className="banner__layout position-relative" key={movie.feedid}>
             <Link className="w-100 h-100" href={`/m/${movie.mediaid}/${movie.title.replace(/ /g, '-')}`}>
-              <Image alt={movie.title} objectFit="cover" src={movie.image} layout="fill" />
+              <Image priority={mappingIndex === 0 && bannerIndex === 0} alt={movie.title} objectFit="cover" src={movie.image} layout="fill" />
             </Link>
           </div>
         ))}
