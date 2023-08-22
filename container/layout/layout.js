@@ -3,7 +3,7 @@ import React from 'react';
 import PlaylistData from '@/fixtures/playlist.json';
 
 const Layout = (props) => {
-  return (
+      return (
     <>
         <header className='layout__header w-100 py-3'>
             <div className='container'>
@@ -12,6 +12,7 @@ const Layout = (props) => {
                     {PlaylistData.menu.map((menuItem) => (
                         <Link key={menuItem.contentId} href={`/p/${menuItem.contentId}`} className="text-white text-decoration-none font-weight-600">{menuItem.label}</Link>
                     ))}
+                    <Link href="/about" className="text-white text-decoration-none font-weight-600">About us</Link>
                 </nav>
             </div>
         </header>

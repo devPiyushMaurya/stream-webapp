@@ -9,14 +9,14 @@ import { DEFAULT_META_DESC, DEFAULT_META_IMG, DEFAULT_META_TITLE } from '@/lib/a
 
 const HomePage = (props) => {
   const { sectionFetchedData = {} } = props;
-  return (
+    return (
     <>
     <CustomSeo
       title={DEFAULT_META_TITLE}
       description={DEFAULT_META_DESC}
       ogImage={DEFAULT_META_IMG}
     />
-    <Layout>
+     <Layout>
       {PlaylistData.content.map((section, index) => {
         if (section.featured) {
           return <BannerView mappingIndex={index} key={section.contentId} sectionData={sectionFetchedData[section.contentId]} section={section} />
